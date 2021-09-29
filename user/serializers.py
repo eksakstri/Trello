@@ -16,7 +16,7 @@ class listserializer(serializers.ModelSerializer):
         model = lists
         fields = ('Name', 'Under_Project')
 
-class userserializer(serializers.ModelSerializer):
+class cardserializer(serializers.ModelSerializer):
     class Meta:
         model = cards
         fields = ('Name', 'Description', 'Status', 'Duedate', 'Under_Project', 'Under_List')
